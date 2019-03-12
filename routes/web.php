@@ -18,11 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/wechat/token', 'Wechat\WechatController@getAccessToken');
 
-Auth::routes();
+Route::get('/wechat/lable', 'Wechat\WechatController@lable');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/wechat/crate', 'Crate\CrateController@submit');
+Route::get('/wechat/crate', 'Crate\CrateController@submit');
+Route::get('/wechat/createmenuaction', 'Crate\CrateController@createmenuaction');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
