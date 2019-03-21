@@ -16,4 +16,8 @@ class TestController extends Controller
          echo $rs ;die;
 
     }
+
+    public function welcome(){
+        return view('welcome');
+    }
 }
