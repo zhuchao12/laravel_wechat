@@ -26,3 +26,6 @@ Route::get('/wechat/crate', 'Crate\CrateController@submit');
 Route::get('/wechat/crate', 'Crate\CrateController@submit');
 Route::get('/wechat/createmenuaction', 'Crate\CrateController@createmenuaction');
 
+
+Route::get('/test/aaa', 'Test\TestController@aaa'); //调passport
+
