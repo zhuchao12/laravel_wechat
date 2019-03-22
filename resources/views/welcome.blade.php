@@ -70,10 +70,10 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="http://passport.hz4155.cn/pass/login">Login</a>
+                        <a href="http://passport.hz4155.cn/login">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="http://passport.hz4155.cn/pass/login">Register</a>
+                            <a href="http://passport.hz4155.cn/register">Register</a>
                         @endif
                     @endauth
                 </div>
