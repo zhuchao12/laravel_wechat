@@ -69,7 +69,7 @@
                     @if($is_login==1)
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="http://passport.hz4155.cn/login?url={{$url}}">Login</a>
+                        <a href="http://pass.wechat.com/login?url={{$url}}">Login</a>
 
                             <a href="http://passport.hz4155.cn/register?url={{$url}}">Register</a>
                         @endif
