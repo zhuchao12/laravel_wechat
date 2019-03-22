@@ -70,6 +70,7 @@ class Kernel extends HttpKernel
         'checkcookie'=>checkcookie::class,
         'log.click'=>clickLog::class,
         'login.status'=>LoginStatus::class,
+        'check.login' => CheckLogin::class,
     ];
 
     /**

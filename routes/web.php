@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-   // echo 222222;exit;
-    return view('welcome');
-});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -28,6 +25,6 @@ Route::get('/wechat/createmenuaction', 'Crate\CrateController@createmenuaction')
 
 Route::get('/wechat/createmenuaction', 'Crate\CrateController@createmenuaction');
 
-Route::get('/aaa', 'Test\TestController@aaa');
+Route::get('/', 'Test\TestController@aaa')->middleware('check.login');
 
 

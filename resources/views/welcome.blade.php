@@ -65,19 +65,15 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
                 <div class="top-right links">
-                    @auth
+                    @if($is_login==1)
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="http://passport.hz4155.cn/login">Login</a>
+                        <a href="http://passport.hz4155.cn/login?url={{$url}}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="http://passport.hz4155.cn/register">Register</a>
+                            <a href="http://passport.hz4155.cn/register?url={{$url}}">Register</a>
                         @endif
-                    @endauth
                 </div>
-            @endif
 
             <div class="content">
                 <div class="title m-b-md">
