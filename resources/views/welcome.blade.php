@@ -73,7 +73,7 @@
                         <a href="http://passport.hz4155.cn/register?url={{$url}}">Register</a>
 
                         @endif
-                        <a href="http://app.hz4155.cn/quit?">退出</a>
+                        <a href="http://app.hz4155.cn/quit">退出</a>
                 </div>
 
             <div class="content">
