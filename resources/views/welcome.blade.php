@@ -70,8 +70,8 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="http://passport.hz4155.cn/login?url={{$url}}">Login</a>
-
-                            <a href="http://passport.hz4155.cn/register?url={{$url}}">Register</a>
+                        <a href="http://passport.hz4155.cn/register?url={{$url}}">Register</a>
+                        <a href="http://app.hz4155.cn/quit?">退出</a>
                         @endif
                 </div>
 
